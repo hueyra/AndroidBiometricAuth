@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@drawable/bg_simple_auth"
+        android:orientation="vertical">
+
+        <com.github.hueyra.biometricauth.widget.CustomStatusView
+            android:id="@+id/sad_sv_loading"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:padding="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            app:progress_color="#FFFFFF"
+            app:load_success_color="#FFFFFF"
+            app:progress_radius="30dp"
+            app:progress_width="3.5dp" />
+
+        <ImageView
+            android:id="@+id/sad_iv_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:id="@+id/sad_tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="15dp"
+            android:textColor="#333"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_r10"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+            <com.github.hueyra.biometricauth.widget.CustomStatusView
+                android:id="@+id/ead_sv_loading"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:padding="15dp"
+                android:visibility="gone"
+                app:load_success_color="#108EE9"
+                app:progress_color="#108EE9"
+                app:progress_radius="30dp"
+                app:progress_width="3.5dp" />
+
+            <ImageView
+                android:id="@+id/ead_iv_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/ead_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:textColor="#333"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ead_tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textColor="#888"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="15dp"
+            android:background="#DDD" />
+
+        <TextView
+            android:id="@+id/ead_tv_auth_again"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="#108EE9"
+            android:textSize="17sp" />
+
+        <View
+            android:id="@+id/ead_v_auth_again_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#DDD" />
+
+        <TextView
+            android:id="@+id/ead_tv_auth_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="#108EE9"
+            android:textSize="17sp" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,4 @@
+
+rootProject.name = "BiometricAuth"
+include ':app'
+include ':library'
