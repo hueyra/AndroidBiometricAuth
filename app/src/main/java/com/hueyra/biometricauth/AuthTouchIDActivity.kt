@@ -62,7 +62,7 @@ class AuthTouchIDActivity : AppCompatActivity(), BiometricAuthCallback, OnAuthAc
     private fun startAuth() {
         //这边主要做一个判断，如果是超过5次，就直接报识别太多次了
         if (mCurrentAuthTime >= 5) {
-            mAuthErrorDialog.authErrorTooManyTimes(true)
+            mAuthErrorDialog.authErrorTooManyTimes(false)
         } else {
             //设置回调
             BiometricAuth.getInstance().setBiometricAuthCallback(this)
@@ -147,7 +147,7 @@ class AuthTouchIDActivity : AppCompatActivity(), BiometricAuthCallback, OnAuthAc
             //错误次数过多，传感器被锁定了
             mCurrentAuthTime = 100
             mSimpleAuthDialog.hide()
-            mAuthErrorDialog.authErrorTooManyTimes(true)
+            mAuthErrorDialog.authErrorTooManyTimes(false)
         }
     }
 
